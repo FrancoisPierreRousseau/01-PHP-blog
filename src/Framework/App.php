@@ -31,6 +31,7 @@ class App
         $this->router = new Router();
         foreach ($modules as $module)
         {
+            var_dump($module);
             $this->modules[] = new $module($this->router);
         }
     }
